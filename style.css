@@ -1,0 +1,37 @@
+@font-face {
+  font-family: fairy;
+  src: url("./assets/FairyPlayground-8MeWA.ttf");
+}
+
+#app {
+  font-family: fairy;
+  text-align: center;
+}
+
+.scrumblies-introcard {
+  font-size: 3em;
+}
+
+#app p {
+  font-size: xx-large;
+}
+
+.scrumblies-gate {
+  font-size: 3em;
+  font-family: fairy;
+  background-color: transparent;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: 6px black dashed;
+  padding: 10px;
+}
+
+.scrumblies-gate:hover {
+  cursor: pointer;
+  animation: jitteryborder .1s infinite steps(2) alternate;
+  border-style: solid;
+}
+
+@keyframes jitteryborder {
+  0% {border-radius: 65px 215px 65px 350px/350px 65px 215px 65px;}
+  100% {border-radius: 15px 225px 15px 255px/255px 15px 225px 15px;}
+}
